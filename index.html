@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Portfólio de Arte</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+
+    <!-- Adicione links para os estilos do carrossel -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+    
+</head>
+<body>
+
+    <header>
+        <h1>Portfólio de Arte Thalys Alencar</h1>
+        <!-- Adicione elementos do cabeçalho, como navegação, logotipo, etc. -->
+    </header>
+
+    <main>
+
+    <div class="carousel-container">
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide"><img src="img/Cristo.jpeg" alt="Cristo By Thalys Wanderley" title="Cristo By Thalys Alencar"></li>
+                    <li class="glide__slide"><img src="img/Miles-Morales.jpg" alt="Miles Morales By Thalys Wanderley" title="Miles Morales By Thalys Alencar"></li>
+                    <li class="glide__slide"><img src="img/Poderoso-Chefao.jpeg" alt="O Poderoso Chefão By Thalys Wanderley" title="O Poderoso Chefão By Thalys Alencar"></li>
+                    <li class="glide__slide"><img src="img/Spider-man.png" alt="Homem-Aranha By Thalys Wanderley" title="Homem-Aranha By Thalys Alencar"></li>
+                    <li class="glide__slide"><img src="img/Tubarao.jpeg" alt="Tubarão By Thalys Wanderley" title="Tubarão By Thalys Alencar"></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Conteúdo adicional sobre suas artes -->
+        <section>
+            <h2>Minhas Pinturas em Tela</h2>
+            <p>Todas as artes foram produzidas pelas mãos talentosas do artista Thalys Alencar.</p>
+        </section>
+    </main>
+
+    <footer>
+        <footer>
+            <div class="social-media-buttons">
+                <a href="https://www.instagram.com/_thalysalencar/" target="_blank" class="social-media-button">
+                    <img src="img/icone-instagram.png" alt="Instagram do artista" title="Instagram do artista">
+                </a>
+        <p>&copy; 2024 Site By Renan Lins. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Adicione links para os scripts JavaScript do carrossel -->
+    <script src="JavaScript/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+        // Inicializa o carrossel
+        $(document).ready(function(){
+            $('.carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+
+</body>
+</html>
